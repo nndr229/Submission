@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search Results</title>
+  </head>
+  <body>
+    <h3>Search Results for "{{ query }}"</h3>
+    <ul>
+      {% for book in books.items %}
+      <li>
+        {{ book.title }} - {{ book.author }} - {{book.pubyear}} -
+        {{book.review}} - {{book.rating}}
+      </li>
+      <!-- <li>{{book.review}}</li>
+        <li>{{book.rating}}</li> -->
+      {% endfor %}
+    </ul>
+  </body>
+</html>
